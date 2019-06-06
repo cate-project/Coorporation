@@ -14,7 +14,8 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
+    String strId;
+    public static String  AAA;
     private TabLayout tabLayout = null;
     private ViewPager viewPager = null;
     private Toolbar toolbar = null;
@@ -30,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Intent intent = getIntent();
+        strId = intent.getStringExtra("userID");
+        AAA=strId;
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();

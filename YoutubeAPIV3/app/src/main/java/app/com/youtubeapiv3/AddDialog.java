@@ -52,7 +52,6 @@ public class AddDialog extends Dialog implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.button_confirm:
-
                 cancel();
                 break;
         }
